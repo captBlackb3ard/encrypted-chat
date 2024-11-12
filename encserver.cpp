@@ -31,6 +31,7 @@ SSL_CTX* create_context(){
 //Configure TLS/SSL Context with Server Certificate and Public Key
 void configure_context(SSL_CTX* ctx){
     SSL_CTX_set_ecdh_auto(ctx, 1);
+    //Change the 'server.crt' and 'server.key' values if these files are named differently
     if (SSL_CTX_use_certificate_file(ctx, "server.crt", SSL_FILETYPE_PEM) <= 0 || SSL_CTX_use_PrivateKey_file(ctx, "server.key", SSL_FILETYPE_PEM) <= 0) {
         ERR_print_errors_fp(stderr);
         exit(EXIT_FAILURE);
