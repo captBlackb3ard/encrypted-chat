@@ -13,7 +13,7 @@
 ## Code Description
 Simple C++ code that establishes a client-server chat app using sockets.
 One version of the code implements plaintext encryption, and the second implements TLS/SSL encryption via the OpenSSL library.
-Review of the code and network traffic analysis can be found [here](https://www.cyberseccaptain.black/p/encrypted-communication-the-basics)
+Review of the code and network traffic analysis can be found [here](https://www.blackbeardcyber.com/projects/encrypted-communication-basics)
 
 ## How to Compile and Execute the Code
 ### Plaintext Chat App Compile
